@@ -1,6 +1,6 @@
 public class ProductRepository {
 
-    private Product[] products  = new Product[0];
+    private Product[] products = new Product[0];
 
     public void add(Product product) {
         Product[] tmp = new Product[products.length + 1];
@@ -23,7 +23,7 @@ public class ProductRepository {
         products = tmp;
     }
 
-    public Product[] findAll(){
+    public Product[] findAll() {
         return products;
     }
 }

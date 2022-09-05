@@ -6,11 +6,11 @@ public class ProductTest {
 
     public ProductRepository products = new ProductRepository();
 
-    public Product product1 = new Book(3,"Book1", 200, "author1");
-    public Product product2 = new Smartphone(4,"Book", 200, "author1");
+    public Product product1 = new Book(3, "Book1", 200, "author1");
+    public Product product2 = new Smartphone(4, "Book", 200, "author1");
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         products.add(product1);
         products.add(product2);
     }
@@ -26,7 +26,7 @@ public class ProductTest {
     }
 
     @Test
-    public void RemoveProducts(){
+    public void RemoveProducts() {
 
         products.removeById(3);
 
